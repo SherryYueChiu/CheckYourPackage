@@ -1,5 +1,9 @@
-lastUpdate = "~ 2021/05/11 6AM";
+lastUpdate = "~ 2021/05/13 6AM";
 packages = `
+From:華南證券
+To:鄧翔文
+Room:508
+
 From:東海大學註冊組
 To:林鼎強
 Room:4F
