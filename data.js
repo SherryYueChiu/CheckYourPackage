@@ -1,5 +1,16 @@
-lastUpdate = "~ 2021/05/17 7AM";
+lastUpdate = "~ 2021/05/19 6AM";
 packages = `
+From:新庄郵局
+To:許呈祥
+
+From:新光銀行
+To:葉明陽
+Room:5F
+
+From:建準電機
+To:吳文軒
+Room:408
+
 From:就服處
 To:陳長葦
 
