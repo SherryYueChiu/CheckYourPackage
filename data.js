@@ -3,10 +3,10 @@ packages = `
 From:第一銀行
 To:許呈祥
 
-From:威盛電子
+From:中國信託
 To:吳美環
 
-From:威盛電子
+From:中國信託
 To:吳柏樺
 
 From:郵寄招領
