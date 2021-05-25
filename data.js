@@ -1,10 +1,10 @@
 ƕlastUpdate = "~ 2021/05/22 6AM";
 packages = `
 From:第一銀行
-To:
+To:許呈祥
 
 From:威盛電子
-To:
+To:吳美環
 
 From:威盛電子
 To:吳柏樺
