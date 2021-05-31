@@ -1,4 +1,4 @@
-ƕlastUpdate = "~ 2021/05/30 6AM";
+ƕlastUpdate = "~ 2021/06/01 6AM";
 packages = `
 From:彰化銀行
 To:吳韻哲
