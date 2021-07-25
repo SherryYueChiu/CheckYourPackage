@@ -1,4 +1,4 @@
-lastUpdate = "~ 2021/07/25 6AM";
+lastUpdate = "~ 2021/07/26 6AM";
 packages = `
 From:郵寄招領
 To:鄧翔文
@@ -7,7 +7,6 @@ Color:白色單張
 
 From:郵寄招領
 To:黃玉靚
-Room:508
 Color:白色單張
 
 From:東海大學註冊組
