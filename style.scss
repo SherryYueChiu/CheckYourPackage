@@ -73,3 +73,34 @@ body {
         transform: translate(0em, 3em);
     }
 }
+
+.functions {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    .function {
+        width: 4rem;
+        height: 4rem;
+        background: darkcyan;
+        border-radius: 50%;
+        opacity: 0.8;
+        font-size: 1.5rem;
+        & > * {
+            width: 50%;
+            height: 50%;
+            transform: translate(50%, 50%);
+        }
+    }
+}
+
+.announce{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1em;
+    background: cadetblue;
+    color: aliceblue;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+}
