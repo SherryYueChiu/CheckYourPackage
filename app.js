@@ -1,6 +1,6 @@
 /**
  * a block displaying date and time
- * @type Element
+ * @type Element - a block displaying date and time
  */
 var lastUpdateBlock = document.querySelector("#lastUpdateBlock");
 /**
@@ -43,13 +43,11 @@ function parseMarkdownTextToObject(markdownTxt) {
     return _packages;
 }
 
-/**
- * append html to letters container
- */
+/**append html to letters container */
 function showPackages() {
-    //to package array
+    // to package array
     let _packages = parseMarkdownTextToObject(packages);
-    //show DOM
+    // show DOM
     _packages.forEach(o => {
         const html = `
 <div class="package">
