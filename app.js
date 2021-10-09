@@ -14,51 +14,30 @@ var container = document.querySelector("#packageContainer");
  */
 var packagesBlock = document.querySelectorAll(".packages");
 
-/**
- * parse markdown text to object array
- * @param {string} markdownTxt 
- * @returns {{from:string, to:string, room:string, color:string}[]}
- */
-function parseMarkdownTextToObject(markdownTxt) {
-    // trim and split lines
-    let _packages = markdownTxt.trim().split(/[\r\n]{2,}/);
-
-    // parse markdown text to object
-    _packages = _packages.map(package => package.split(/[\r\n]+/));
-    _packages.map(package => {
-        package.map(attribute => {
-            if (attribute.indexOf("From:") != -1) {
-                package.from = attribute.trim().replace("From:", "");
-            } else if (attribute.indexOf("To:") != -1) {
-                package.to = attribute.trim().replace("To:", "");
-            } else if (attribute.indexOf("Room:") != -1) {
-                package.room = attribute.trim().replace("Room:", "");
-            } else if (attribute.indexOf("Color:") != -1) {
-                package.color = attribute.trim().replace("Color:", "");
-            }
-            return attribute;
-        });
-        return package;
-    });
-    return _packages;
-}
-
 /**append html to letters container */
 function showPackages() {
     // to package array
-    let _packages = parseMarkdownTextToObject(packages);
     // show DOM
-    _packages.forEach(o => {
-        const html = `
+    const nullRoomNum = 99999;
+    packages
+        .sort((a, b) => {
+            a.room ||= nullRoomNum;
+            b.room ||= nullRoomNum;
+            if (a.room > b.room) return 1;
+            else if (a.room < b.room) return - 1;
+            return 0;
+        })
+        .forEach(package => {
+            let templateHTML = `
 <div class="package">
-    ${o.to ? "<span class='to'>" + o.to + "</span>" : ""}
-    ${o.from ? "<span class='from'>" + o.from + "</span>" : ""}
-    ${o.room ? "<span class='room'>" + o.room + "</span>" : ""}
-    ${o.color ? "<span class='color'>" + o.color + "</span>" : ""}
+    ${package.to ? "<span class='to'>" + package.to + "</span>" : ""}
+    ${package.from ? "<span class='from'>" + package.from + "</span>" : ""}
+    ${(package.room && package.room != nullRoomNum) ? "<span class='room'>" + package.room + "</span>" : ""}
+    ${package.color ? "<span class='color'>" + package.color + "</span>" : ""}
 </div>
-    `;
-        container.insertAdjacentHTML("beforeend", html);
-    });
+`;
+            container.insertAdjacentHTML("beforeend", templateHTML);
+        });
 }
 
 window.onload = function () {

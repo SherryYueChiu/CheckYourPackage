@@ -1,18 +1,41 @@
-lastUpdate = "~ 2021/08/13 6AM";
-packages = `
-From:玉山銀行
-To:蘇斳
-Room:310
-Color:白色信封
-
-From:郵寄招領
-To:黃玉靚
-Color:白色單張
-`;
-
-/*
-From:
-To:
-Room:
-Color:
+/** 最後更新時間 */
+var lastUpdate = "~ 2021/10/11 6AM";
+/** 所有信件
+* @type {{from:string, to:string, room:string, color:string}[]}
 */
+var packages = [
+    {
+        from: "健保署",
+        to: "林勇安",
+        room: "502"
+    }, {
+        from: "彰化銀行",
+        to: "吳韻哲",
+        room: "501",
+        color: "2封"
+    }, {
+        from: "元大銀行",
+        to: "吳文軒",
+        room: "408"
+    }, {
+        from: "國泰投信",
+        to: "吳文軒",
+        room: "204"
+    }, {
+        from: "富邦投信",
+        to: "劉天仲",
+        room: "204"
+    }, {
+        from: "Church of scientology advanced...",
+        to: "Shen Yu-Hsiang"
+    }, {
+        from: "玉山銀行",
+        to: "蘇斳",
+        room: "310",
+        color: "2封"
+    }, {
+        from: "國泰投信",
+        to: "林應因",
+        room: "5F"
+    }
+];
