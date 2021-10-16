@@ -1,5 +1,5 @@
 /** 最後更新時間 */
-var lastUpdate = "~ 2021/10/11 6AM";
+var lastUpdate = "~ 2021/10/30 6AM";
 /** 所有信件
 * @type {{from:string, to:string, room:string, color:string}[]}
 */
@@ -20,7 +20,7 @@ var packages = [
     }, {
         from: "國泰投信",
         to: "吳文軒",
-        room: "204"
+        room: "408"
     }, {
         from: "富邦投信",
         to: "劉天仲",
@@ -37,5 +37,12 @@ var packages = [
         from: "國泰投信",
         to: "林應因",
         room: "5F"
+    }, {
+        from: "中華電信",
+        to: "許呈祥"
+    }, {
+        from: "中國商銀",
+        to: "陳玉琳",
+        room: "306"
     }
 ];

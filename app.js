@@ -1,22 +1,12 @@
-/**
- * a block displaying date and time
- * @type Element - a block displaying date and time
- */
+/** a block displaying date and time */
 var lastUpdateBlock = document.querySelector("#lastUpdateBlock");
-/**
- * contsiner of blocks of letters
- * @type Element
- */
+/** contsiner of blocks of letters */
 var container = document.querySelector("#packageContainer");
-/**
- * blocks of letters
- * @type NodeListOf<Element>
- */
+/** blocks of letters */
 var packagesBlock = document.querySelectorAll(".packages");
 
-/**append html to letters container */
-function showPackages() {
-    // to package array
+/** append html to letters container */
+let showPackages = () => {
     // show DOM
     const nullRoomNum = 99999;
     packages
