@@ -44,5 +44,9 @@ var packages = [
         from: "中國商銀",
         to: "陳玉琳",
         room: "306"
+    }, {
+        from: "郵局招領",
+        to: "林采珏",
+        room: "504"
     }
 ];
